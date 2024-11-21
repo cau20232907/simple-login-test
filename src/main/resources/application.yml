@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    # url, DB username, password는 gitignore 대상
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 64
+    open-in-view: false
